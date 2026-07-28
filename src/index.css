@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  background: #000; /* fallback while canvas frames load */
+  overscroll-behavior: none;
+}
+
+@layer base {
+  :root {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  body {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: transparent; /* let the canvas show through */
+    color: #ffffff;
+  }
+
+  button {
+    transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease !important;
+  }
+  
+  button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    opacity: 0.9;
+  }
+  
+  button:active:not(:disabled) {
+    transform: translateY(0);
+  }
+}
+
+.font-serif-italic {
+  font-family: 'Playfair Display', Georgia, Cambria, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
+/* Continuous smooth marquee animations */
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-continuous {
+  display: flex;
+  width: max-content;
+  animation: marquee-left 30s linear infinite;
+}
+
+.animate-marquee-continuous:hover {
+  animation-play-state: paused;
+}
+
+/* Custom scrollbar for clean UI */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #09090b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}

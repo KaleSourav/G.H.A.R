@@ -1,0 +1,6 @@
+{
+  "name": "Gem Homes Advisory & Realtors (G.H.A.R.)",
+  "description": "Luxury real estate advisory in South Mumbai featuring DM Sans typography, pure black background, pure white accents, 9 premier luxury developments, and leadership profile cards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
