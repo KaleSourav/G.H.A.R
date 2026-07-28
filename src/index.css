@@ -74,3 +74,48 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: #3f3f46;
 }
+
+/* ── Mobile / Touch Optimizations ── */
+
+/* Remove tap highlight on mobile */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Smooth touch scrolling */
+html, body {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Safe-area padding for notch/home-bar phones (iPhone X+) */
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+/* Hide scrollbar on mobile horizontal scrolls but keep functionality */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Prevent text size adjustment on orientation change */
+body {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* Better mobile button sizing — min 44px tap target */
+@media (max-width: 640px) {
+  button, a[role="button"] {
+    min-height: 36px;
+  }
+
+  /* Tighter scrollbar on mobile */
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+}
