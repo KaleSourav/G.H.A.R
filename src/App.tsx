@@ -59,6 +59,9 @@ export default function App() {
       } else if (nav === 'About') {
         const el = document.getElementById('about-section');
         if (el) el.scrollIntoView({ behavior: 'smooth' });
+      } else if (nav === 'Certifications') {
+        const el = document.getElementById('certifications-section');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
       } else if (nav === 'Contact' || nav === 'Get Started') {
         const el = document.getElementById('contact-section');
         if (el) el.scrollIntoView({ behavior: 'smooth' });

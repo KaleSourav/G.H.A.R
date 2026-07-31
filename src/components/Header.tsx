@@ -17,7 +17,7 @@ export const Header: React.FC<HeaderProps> = ({
   variant = 'embedded',
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const navItems = ['Home', 'Projects', 'By Location', 'About', 'Contact'];
+  const navItems = ['Home', 'Projects', 'By Location', 'About', 'Certifications', 'Contact'];
 
   const handleNavClick = (item: string) => {
     onNavClick?.(item);

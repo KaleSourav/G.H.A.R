@@ -818,6 +818,44 @@ export const LandingPageSections: React.FC<LandingPageSectionsProps> = ({
       </section>
 
 
+      {/* ---------------- SECTION 9: CERTIFICATIONS ---------------- */}
+      <section id="certifications-section" className="max-w-7xl mx-auto px-6 mb-24">
+        <AnimatedSection className="text-center max-w-3xl mx-auto mb-16">
+          <span className="inline-block px-3 py-1 rounded-full bg-white/10 text-white text-xs font-semibold uppercase tracking-widest mb-3">
+            Industry Recognition
+          </span>
+          <h2 className="text-3xl sm:text-5xl font-bold text-white mb-4">
+            Our Certifications
+          </h2>
+          <p className="text-white/70 text-sm sm:text-base leading-relaxed">
+            Our commitment to excellence and professional standards in the real estate industry.
+          </p>
+        </AnimatedSection>
+
+        <AnimatedGrid className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <AnimatedCard className="group relative rounded-[32px] overflow-hidden shadow-2xl border border-white/10 hover:border-white/30 transition-all duration-500 bg-zinc-950/80 backdrop-blur-md p-4">
+            <div className="relative aspect-[4/3] w-full overflow-hidden bg-white/5 rounded-2xl flex items-center justify-center p-2">
+              <img 
+                src="https://lh3.googleusercontent.com/d/1HbUDPwbC0nE5fFgQ59yrDL2TKl9Urb0X=w1000" 
+                alt="Certification 1" 
+                className="w-full h-full object-contain transition-transform duration-700 ease-out group-hover:scale-[1.15]" 
+              />
+            </div>
+          </AnimatedCard>
+          
+          <AnimatedCard className="group relative rounded-[32px] overflow-hidden shadow-2xl border border-white/10 hover:border-white/30 transition-all duration-500 bg-zinc-950/80 backdrop-blur-md p-4">
+            <div className="relative aspect-[4/3] w-full overflow-hidden bg-white/5 rounded-2xl flex items-center justify-center p-2">
+              <img 
+                src="https://lh3.googleusercontent.com/d/1MuqWdcL3r54Np7dgiQiJnUnJYOTEuKQU=w1000" 
+                alt="Certification 2" 
+                className="w-full h-full object-contain transition-transform duration-700 ease-out group-hover:scale-[1.15]" 
+              />
+            </div>
+          </AnimatedCard>
+        </AnimatedGrid>
+      </section>
+
+
       {/* ---------------- SECTION 10: Form Section ---------------- */}
       <section id="contact-section" className="max-w-7xl mx-auto px-6">
         <AnimatedSection className="bg-zinc-950 border border-white/15 rounded-[36px] p-8 sm:p-12 md:p-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center shadow-2xl">
