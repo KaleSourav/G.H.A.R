@@ -655,85 +655,31 @@ export const LandingPageSections: React.FC<LandingPageSectionsProps> = ({
           </div>
         </AnimatedSection>
 
-        {/* 3 Trust Cards Grid — each card auto-slides through 10+ images */}
-        <AnimatedGrid className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
-
-          {/* Card 1: Expert Guidance */}
-          <AnimatedCard className="group flex flex-col justify-between transition-all duration-500 hover:-translate-y-2 cursor-pointer bg-zinc-950/80 backdrop-blur-md p-5 rounded-[32px] border border-white/10 shadow-xl hover:border-white/30 hover:shadow-2xl">
-            <div>
-              <AutoSlideImages
-                alt="Expert Guidance"
-                interval={2800}
-                images={[
+        {/* Continuous Image Marquee */}
+        <div className="w-full overflow-hidden rounded-[32px] border border-white/10 relative mt-8">
+          {/* Fading edges for seamless look */}
+          <div className="absolute left-0 top-0 bottom-0 w-12 sm:w-24 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-12 sm:w-24 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
+          
+          <div className="animate-marquee-right flex gap-4 py-4">
+            {[...Array(2)].map((_, groupIdx) => (
+              <React.Fragment key={groupIdx}>
+                {[
                   'https://lh3.googleusercontent.com/d/15XqzCDWxZFMi6eaGpdgPsoqhdLW7rgQm=w1000',
                   'https://lh3.googleusercontent.com/d/1IoALzbUn6_bAvlc1Qz9RMxeki82mDuSQ=w1000',
                   'https://lh3.googleusercontent.com/d/1RHxZvruaJYcUma32yrOM0uH7aIQrkuhd=w1000',
                   'https://lh3.googleusercontent.com/d/1qJc_-bMsU3sVzlHm-j8v6TgeWWgG9ggA=w1000',
                   'https://lh3.googleusercontent.com/d/1xd1KeYgpIE0AB-DJkVxtFknowjyfqOzy=w1000',
                   'https://lh3.googleusercontent.com/d/14W2l95Bcz1ulCJOBPD_x3qCsqmzOeywS=w1000',
-                ]}
-              />
-              <div className="flex items-start justify-between gap-4 mt-2">
-                <div>
-                  <h3 className="text-xl font-bold text-white mb-1 group-hover:text-[#fbcfe8] transition-colors">Expert Guidance</h3>
-                  <p className="text-xs text-white/70 leading-relaxed max-w-xs">10+ years of dedicated leadership in South Mumbai's luxury residential market.</p>
-                </div>
-                <span className="text-xl font-bold text-white/40 group-hover:text-white/80 font-mono">/01</span>
-              </div>
-            </div>
-          </AnimatedCard>
-
-          {/* Card 2: Iconic Developments */}
-          <AnimatedCard className="group flex flex-col justify-between transition-all duration-500 hover:-translate-y-2 cursor-pointer bg-zinc-950/80 backdrop-blur-md p-5 rounded-[32px] border border-white/10 shadow-xl hover:border-white/30 hover:shadow-2xl">
-            <div>
-              <AutoSlideImages
-                alt="Iconic Developments"
-                interval={3200}
-                images={[
-                  'https://lh3.googleusercontent.com/d/15XqzCDWxZFMi6eaGpdgPsoqhdLW7rgQm=w1000',
-                  'https://lh3.googleusercontent.com/d/1IoALzbUn6_bAvlc1Qz9RMxeki82mDuSQ=w1000',
-                  'https://lh3.googleusercontent.com/d/1RHxZvruaJYcUma32yrOM0uH7aIQrkuhd=w1000',
-                  'https://lh3.googleusercontent.com/d/1qJc_-bMsU3sVzlHm-j8v6TgeWWgG9ggA=w1000',
-                  'https://lh3.googleusercontent.com/d/1xd1KeYgpIE0AB-DJkVxtFknowjyfqOzy=w1000',
-                  'https://lh3.googleusercontent.com/d/14W2l95Bcz1ulCJOBPD_x3qCsqmzOeywS=w1000',
-                ]}
-              />
-              <div className="flex items-start justify-between gap-4 mt-2">
-                <div>
-                  <h3 className="text-xl font-bold text-white mb-1 group-hover:text-[#fbcfe8] transition-colors">Iconic Developments</h3>
-                  <p className="text-xs text-white/70 leading-relaxed max-w-xs">Direct relationships with developers behind Lodha World Towers, Indiabulls Sky Forest, and Piramal Aranya.</p>
-                </div>
-                <span className="text-xl font-bold text-white/40 group-hover:text-white/80 font-mono">/02</span>
-              </div>
-            </div>
-          </AnimatedCard>
-
-          {/* Card 3: Absolute Transparency */}
-          <AnimatedCard className="group flex flex-col justify-between transition-all duration-500 hover:-translate-y-2 cursor-pointer bg-zinc-950/80 backdrop-blur-md p-5 rounded-[32px] border border-white/10 shadow-xl hover:border-white/30 hover:shadow-2xl">
-            <div>
-              <AutoSlideImages
-                alt="Absolute Transparency"
-                interval={3600}
-                images={[
-                  'https://lh3.googleusercontent.com/d/15XqzCDWxZFMi6eaGpdgPsoqhdLW7rgQm=w1000',
-                  'https://lh3.googleusercontent.com/d/1IoALzbUn6_bAvlc1Qz9RMxeki82mDuSQ=w1000',
-                  'https://lh3.googleusercontent.com/d/1RHxZvruaJYcUma32yrOM0uH7aIQrkuhd=w1000',
-                  'https://lh3.googleusercontent.com/d/1qJc_-bMsU3sVzlHm-j8v6TgeWWgG9ggA=w1000',
-                  'https://lh3.googleusercontent.com/d/1xd1KeYgpIE0AB-DJkVxtFknowjyfqOzy=w1000',
-                  'https://lh3.googleusercontent.com/d/14W2l95Bcz1ulCJOBPD_x3qCsqmzOeywS=w1000',
-                ]}
-              />
-              <div className="flex items-start justify-between gap-4 mt-2">
-                <div>
-                  <h3 className="text-xl font-bold text-white mb-1 group-hover:text-[#fbcfe8] transition-colors">Absolute Transparency</h3>
-                  <p className="text-xs text-white/70 leading-relaxed max-w-xs">End-to-end advisory ensuring every transaction is handled with integrity and care.</p>
-                </div>
-                <span className="text-xl font-bold text-white/40 group-hover:text-white/80 font-mono">/03</span>
-              </div>
-            </div>
-          </AnimatedCard>
-
-        </AnimatedGrid>
+                ].map((src, idx) => (
+                  <div key={`${groupIdx}-${idx}`} className="w-[260px] sm:w-[360px] md:w-[420px] aspect-[4/3] rounded-2xl overflow-hidden shrink-0 border border-white/10 shadow-xl bg-zinc-900">
+                    <img src={src} alt={`Client Trust ${idx + 1}`} className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+                  </div>
+                ))}
+              </React.Fragment>
+            ))}
+          </div>
+        </div>
       </section>
 
 
