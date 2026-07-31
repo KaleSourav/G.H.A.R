@@ -274,15 +274,15 @@ export const INITIAL_PROPERTIES: Property[] = [
     location: 'Nesbit Road, Mazgaon, South Mumbai – 400010',
     city: 'Mazgaon',
     type: 'Heritage Estate',
-    price: 900000000,
-    priceDisplay: '₹9 Cr – ₹30 Cr++',
-    pricePerSqft: '₹55,000 – ₹70,000 / sq.ft.',
-    sqft: '1,500–3,500+ sq.ft.',
-    beds: '3, 4 & 5 BHK',
-    baths: 4,
+    price: 50300000,
+    priceDisplay: '₹5.03 Cr – ₹6.86 Cr',
+    pricePerSqft: 'On Request',
+    sqft: '841 – 960 sq.ft.',
+    beds: '2 BHK',
+    baths: 2,
     status: 'Nearing Completion (Limited Inventory)',
     completionStatus: 'Nearing Completion',
-    configuration: '3, 4 & 5 BHK Luxury Residences',
+    configuration: '2 BHK Luxury Residences',
     amenities: 'Heritage estate living, Landscaped gardens, Premium clubhouse, Swimming pool, High security, Exclusive low-density development',
     image: 'https://lh3.googleusercontent.com/d/1JwBGvp3eWBJ30DhVSd1wF-WGha9FAcx7=w1000',
     description: 'Exclusive heritage estate living in Mazgaon featuring landscaped gardens, high-level security, and ultra-low density privacy.',
@@ -306,9 +306,10 @@ export const INITIAL_PROPERTIES: Property[] = [
       'Direct integration with world-class medical concierge services'
     ],
     configsList: [
-      { type: '3 BHK Heritage Residence', carpetArea: '1,500 sq.ft.', priceRange: '₹9.0 Cr – ₹12.5 Cr' },
-      { type: '4 BHK Estate Suite', carpetArea: '2,200 sq.ft.', priceRange: '₹16.5 Cr – ₹22.0 Cr' },
-      { type: '5 BHK Grand Villa', carpetArea: '3,500+ sq.ft.', priceRange: '₹30.0 Cr++' }
+      { type: '2 BHK (N)', carpetArea: '841 sq.ft.', priceRange: '₹5.03 Cr – ₹5.72 Cr' },
+      { type: '2 BHK (S)', carpetArea: '841 sq.ft.', priceRange: '₹5.59 Cr – ₹6.58 Cr' },
+      { type: '2 BHK', carpetArea: '866 sq.ft.', priceRange: '₹5.53 Cr – ₹5.84 Cr' },
+      { type: '2 BHK LARGE', carpetArea: '960 sq.ft.', priceRange: '₹5.15 Cr – ₹6.86 Cr' }
     ],
     gallery: [
       { url: 'https://lh3.googleusercontent.com/d/13jErM_xsm1I2a84o87tww7cwUYDFF7dx=w1000', caption: 'Aga Hall Estate Gardens' },
