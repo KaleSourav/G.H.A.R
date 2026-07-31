@@ -683,50 +683,7 @@ export const LandingPageSections: React.FC<LandingPageSectionsProps> = ({
       </section>
 
 
-      {/* ---------------- SECTION 5: Exclusive properties, sorted by category ---------------- */}
-      <section className="max-w-7xl mx-auto px-6">
-        <AnimatedSection className="mb-10">
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white mb-2">
-            Exclusive residences,<br />sorted by category
-          </h2>
-        </AnimatedSection>
 
-        <AnimatedGrid className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-          {[
-            {
-              title: 'Sky Villas & Duplexes',
-              status: 'Ready to Move',
-              image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80',
-            },
-            {
-              title: 'Iconic Skyscraper Towers',
-              status: 'Ready to Move',
-              image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80',
-            },
-            {
-              title: 'Parkside & Heritage Estates',
-              status: 'Under Construction',
-              image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80',
-            }
-          ].map((cat, i) => (
-            <AnimatedCard key={i} className="group rounded-3xl bg-zinc-950 border border-white/10 overflow-hidden shadow-xl">
-              <div className="relative h-64 overflow-hidden">
-                <img src={cat.image} alt={cat.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                <span className="absolute top-4 right-4 bg-black/80 text-white text-xs font-bold px-3 py-1 rounded-full border border-white/20">
-                  {cat.status}
-                </span>
-              </div>
-              <div className="p-5">
-                <h3 className="font-bold text-lg text-white">{cat.title}</h3>
-              </div>
-            </AnimatedCard>
-          ))}
-        </AnimatedGrid>
-
-        <p className="text-xs text-white/60 max-w-xl">
-          Explore a handpicked selection of ultra-luxury residences across Lower Parel, Worli, Prabhadevi, Mahalaxmi, Byculla, and Mazgaon matching your high standards.
-        </p>
-      </section>
 
 
       {/* ---------------- SECTION 8: ABOUT US / MEET OUR EXPERT TEAM ---------------- */}
