@@ -944,7 +944,7 @@ export const LandingPageSections: React.FC<LandingPageSectionsProps> = ({
 
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-white/50">
           <p>© 2026 Gem Homes Advisory & Realtors (G.H.A.R.). All Rights Reserved.</p>
-          <p className="mt-2 sm:mt-0">DM Sans & Pure Black Minimal Luxury Theme</p>
+
         </div>
       </footer>
 
