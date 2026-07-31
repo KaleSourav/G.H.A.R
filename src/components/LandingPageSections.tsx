@@ -670,6 +670,7 @@ export const LandingPageSections: React.FC<LandingPageSectionsProps> = ({
                   'https://lh3.googleusercontent.com/d/1RHxZvruaJYcUma32yrOM0uH7aIQrkuhd=w1000',
                   'https://lh3.googleusercontent.com/d/1qJc_-bMsU3sVzlHm-j8v6TgeWWgG9ggA=w1000',
                   'https://lh3.googleusercontent.com/d/1xd1KeYgpIE0AB-DJkVxtFknowjyfqOzy=w1000',
+                  'https://lh3.googleusercontent.com/d/14W2l95Bcz1ulCJOBPD_x3qCsqmzOeywS=w1000',
                 ]}
               />
               <div className="flex items-start justify-between gap-4 mt-2">
@@ -694,6 +695,7 @@ export const LandingPageSections: React.FC<LandingPageSectionsProps> = ({
                   'https://lh3.googleusercontent.com/d/1RHxZvruaJYcUma32yrOM0uH7aIQrkuhd=w1000',
                   'https://lh3.googleusercontent.com/d/1qJc_-bMsU3sVzlHm-j8v6TgeWWgG9ggA=w1000',
                   'https://lh3.googleusercontent.com/d/1xd1KeYgpIE0AB-DJkVxtFknowjyfqOzy=w1000',
+                  'https://lh3.googleusercontent.com/d/14W2l95Bcz1ulCJOBPD_x3qCsqmzOeywS=w1000',
                 ]}
               />
               <div className="flex items-start justify-between gap-4 mt-2">
@@ -718,6 +720,7 @@ export const LandingPageSections: React.FC<LandingPageSectionsProps> = ({
                   'https://lh3.googleusercontent.com/d/1RHxZvruaJYcUma32yrOM0uH7aIQrkuhd=w1000',
                   'https://lh3.googleusercontent.com/d/1qJc_-bMsU3sVzlHm-j8v6TgeWWgG9ggA=w1000',
                   'https://lh3.googleusercontent.com/d/1xd1KeYgpIE0AB-DJkVxtFknowjyfqOzy=w1000',
+                  'https://lh3.googleusercontent.com/d/14W2l95Bcz1ulCJOBPD_x3qCsqmzOeywS=w1000',
                 ]}
               />
               <div className="flex items-start justify-between gap-4 mt-2">
