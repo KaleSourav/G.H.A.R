@@ -33,9 +33,7 @@ export const Header: React.FC<HeaderProps> = ({
           onClick={() => handleNavClick('Home')}
           className="flex items-center gap-2.5 cursor-pointer group"
         >
-          <div className="w-8 h-8 rounded-lg bg-white text-black flex items-center justify-center font-bold text-lg tracking-tight shadow-md transition-transform group-hover:scale-105">
-            G
-          </div>
+          <img src="/IMG_5157.PNG" alt="G.H.A.R. Logo" className="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-105" />
           <span className="text-white text-lg sm:text-xl font-bold tracking-tight">
             {logoText}
           </span>

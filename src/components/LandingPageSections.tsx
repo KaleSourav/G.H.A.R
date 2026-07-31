@@ -917,10 +917,8 @@ export const LandingPageSections: React.FC<LandingPageSectionsProps> = ({
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-lg bg-white text-black flex items-center justify-center font-bold text-lg">
-                G
-              </div>
-              <span className="text-xl font-bold text-white">Gem Homes Advisory & Realtors (G.H.A.R.)</span>
+              <img src="/IMG_5157.PNG" alt="G.H.A.R. Logo" className="h-12 sm:h-16 w-auto object-contain" />
+              <span className="text-xl font-bold text-white hidden sm:block">Gem Homes Advisory & Realtors (G.H.A.R.)</span>
             </div>
             <p className="text-xs text-white/60 max-w-md leading-relaxed">
               Redefining luxury real estate advisory through trust, transparency, and personalized service across South Mumbai.
