@@ -1,16 +1,1 @@
-{
-  "rewrites": [
-    {
-      "source": "/crm",
-      "destination": "https://g-h-a-r-crm.vercel.app/crm/index.html"
-    },
-    {
-      "source": "/crm/(.*)",
-      "destination": "https://g-h-a-r-crm.vercel.app/crm/$1"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
-  ]
-}
+
